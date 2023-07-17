@@ -10,8 +10,9 @@ nav {
     align-items: center;
     padding: 20px;
 }
-.menu{
-    visibility: hidden;
+
+.menu {
+    display: none;
 }
 
 nav ol {
@@ -196,22 +197,23 @@ footer>div a {
 /* meadia quary */
 /* for mobile device */
 @media screen and (max-width:576px) {
-    .menu{
-        visibility: visible;
+    .menu {
+        display: flex;
     }
+
+   
     nav {
         padding: 5px;
     }
-   
 
-   
+
+
 
     ol li:nth-child(1),
     ol li:nth-child(2),
-    ol li:nth-child(3), 
+    ol li:nth-child(3),
     ol li:nth-child(4),
-    ol li:nth-child(5)
-     {
+    ol li:nth-child(5) {
         display: none;
     }
 
@@ -263,7 +265,7 @@ footer>div a {
 /* for tablet  */
 @media screen and (max-width:992px) {
 
-  
+
 
     .banner-container {
         flex-direction: column-reverse;
