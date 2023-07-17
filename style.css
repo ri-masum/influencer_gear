@@ -53,15 +53,17 @@ nav ol a {
     font-weight: 400;
 
 }
-.btn1{
+
+.btn1 {
     color: #E02C6D;
     border: none;
     font-size: 13px;
     font-weight: 700;
-    background-color:white;
+    background-color: white;
     padding: 10px;
 }
-.button{
+
+.button {
     padding: 10px;
     margin-left: 1044px;
     margin-top: 30px;
@@ -129,7 +131,40 @@ nav ol a {
     font-size: 13px;
 }
 
+/* feature container
+ */
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 80px;
+    padding: 20px;
+}
 
+.feature-text>p {
+    width: 501px;
+    height: 88px;
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    /* 175% */
+}
+
+.feature-text>h1 {
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.feature-text>button {
+    display: inline-flex;
+    padding: 10px 24px;
+    border-radius: 0;
+    align-items: flex-start;
+    gap: 8px;
+}
 
 /* meadia quary */
 /* for mobile device */
@@ -163,6 +198,30 @@ nav ol a {
 
     }
 
+    .button {
+        padding: 10px;
+        margin-left: 100px;
+        margin-top: 30px;
+
+    }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+
+    }
+
+    .feature-text{
+       text-align: center;
+    }
+    .feature-text>p {
+        width: 100%;
+
+    }
+    .feature-text > button {
+       margin-top: 20px;
+    }
+
 }
 
 /* for tablet  */
@@ -183,6 +242,15 @@ nav ol a {
         align-items: center;
 
     }
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+        width: 100%;
+align-items: center;
+    }
+
+   
+    
 
 
 }
