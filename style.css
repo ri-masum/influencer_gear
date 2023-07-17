@@ -50,9 +50,21 @@ nav ol a {
     border: none;
     color: #FFF;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+
+}
+.btn1{
+    color: #E02C6D;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    background-color:white;
+    padding: 10px;
+}
+.button{
+    padding: 10px;
+    margin-left: 1044px;
+    margin-top: 30px;
 
 }
 
@@ -61,7 +73,7 @@ nav ol a {
 /* sponser container
  */
 .sponser-container {
-    width: 90% ;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -75,6 +87,49 @@ nav ol a {
     height: 31.065px;
 
 }
+
+/* Cards */
+.bold-font {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.Cards-container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 429px;
+    border-radius: 5px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.item {
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.item-desc {
+    font-size: 13px;
+}
+
+
 
 /* meadia quary */
 /* for mobile device */
@@ -92,13 +147,20 @@ nav ol a {
     }
 
     .banner-container {
-        width: 100%;
+        width: auto;
         flex-direction: column-reverse;
     }
 
     .sponser-container {
         gap: 20px;
         flex-wrap: wrap;
+    }
+
+    .Cards-container {
+
+
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
 }
@@ -114,5 +176,13 @@ nav ol a {
     .banner-container {
         flex-direction: column-reverse;
     }
+
+    .Cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
 
 }
