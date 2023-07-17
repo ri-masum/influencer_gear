@@ -10,6 +10,9 @@ nav {
     align-items: center;
     padding: 20px;
 }
+.menu{
+    visibility: hidden;
+}
 
 nav ol {
     display: flex;
@@ -170,36 +173,46 @@ nav ol a {
 /* footer */
 footer {
 
-    margin-top:150px ;
+    margin-top: 150px;
     text-align: center;
     width: 100vw;
     height: 239px;
-    background-color:#0A0826 ;
+    background-color: #0A0826;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-footer > div {
+
+footer>div {
     display: inline-block;
     margin-left: 10px;
 }
-footer > div a{
-margin-right: 20px;}
+
+footer>div a {
+    margin-right: 20px;
+}
 
 /* meadia quary */
 /* for mobile device */
 @media screen and (max-width:576px) {
-
-    nav {
-        flex-direction: column;
-
-        padding: 0px;
+    .menu{
+        visibility: visible;
     }
+    nav {
+        padding: 5px;
+    }
+   
 
-    nav ol {
-        margin-right: 35px;
-        gap: 20px;
+   
+
+    ol li:nth-child(1),
+    ol li:nth-child(2),
+    ol li:nth-child(3), 
+    ol li:nth-child(4),
+    ol li:nth-child(5)
+     {
+        display: none;
     }
 
     .banner-container {
@@ -250,10 +263,7 @@ margin-right: 20px;}
 /* for tablet  */
 @media screen and (max-width:992px) {
 
-    nav {
-        flex-direction: column;
-
-    }
+  
 
     .banner-container {
         flex-direction: column-reverse;
@@ -272,6 +282,7 @@ margin-right: 20px;}
         width: 100%;
         align-items: center;
     }
+
     .button {
         padding: 10px;
         margin-left: 350px;
