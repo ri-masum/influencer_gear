@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -38,7 +37,8 @@ nav ol a {
 
 } */
 .banner-img {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     background-image: url('./images/Circle\ design.svg');
 }
@@ -58,6 +58,24 @@ nav ol a {
 
 /* banenr container */
 
+/* sponser container
+ */
+.sponser-container {
+    width: 90% ;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background: #FFF;
+    margin-top: 100px;
+
+}
+
+.sponser-container img {
+    width: 55.051px;
+    height: 31.065px;
+
+}
+
 /* meadia quary */
 /* for mobile device */
 @media screen and (max-width:576px) {
@@ -73,9 +91,14 @@ nav ol a {
         gap: 20px;
     }
 
-    .banner-container{
+    .banner-container {
         width: 100%;
         flex-direction: column-reverse;
+    }
+
+    .sponser-container {
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
 }
@@ -87,7 +110,8 @@ nav ol a {
         flex-direction: column;
 
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
     }
 
