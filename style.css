@@ -6,7 +6,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
 }
@@ -98,8 +98,9 @@ nav ol a {
 }
 
 .Cards-container {
+    place-items: center;
+
     display: grid;
-    width: 90%;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
@@ -166,6 +167,26 @@ nav ol a {
     gap: 8px;
 }
 
+/* footer */
+footer {
+
+    margin-top:150px ;
+    text-align: center;
+    width: 100vw;
+    height: 239px;
+    background-color:#0A0826 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer > div {
+    display: inline-block;
+    margin-left: 10px;
+}
+footer > div a{
+margin-right: 20px;}
+
 /* meadia quary */
 /* for mobile device */
 @media screen and (max-width:576px) {
@@ -211,15 +232,17 @@ nav ol a {
 
     }
 
-    .feature-text{
-       text-align: center;
+    .feature-text {
+        text-align: center;
     }
+
     .feature-text>p {
         width: 100%;
 
     }
-    .feature-text > button {
-       margin-top: 20px;
+
+    .feature-text>button {
+        margin-top: 20px;
     }
 
 }
@@ -242,15 +265,22 @@ nav ol a {
         align-items: center;
 
     }
+
     .feature-container {
         flex-direction: column-reverse;
         padding: 0px;
         width: 100%;
-align-items: center;
+        align-items: center;
+    }
+    .button {
+        padding: 10px;
+        margin-left: 350px;
+        margin-top: 30px;
+
     }
 
-   
-    
+
+
 
 
 }
